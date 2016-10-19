@@ -1,0 +1,68 @@
+
+
+
+<!--index.wxml-->
+<view class="container">
+     <nav class="main-nav">
+        <ul>
+        	<li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">我的圈</li>
+        	<li class="teshu {{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">热帖</li>
+        	<li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">更多圈</li>
+        </ul>
+        <icon type="search" size="20" color="white"/>
+     </nav>
+
+              
+   
+
+    <swiper class="main-list" indicator-dots="{{bigswiper.indicatorDots}}" autoplay="{{bigswiper.autoplay}}" interval="{{bigswiper.interval}}" duration="{{bigswiper.duration}}" current="{{current}}" bindchange="changeSlider">
+        <block>
+        <swiper-item>
+                 <!-- 第一个界面的滚动界面 -->
+           <scroll-view scroll-y="true" style="height: 100%; overflow: hidden;">
+                  <!-- 轮播图模块 -->
+            <swiper class="banner" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}">
+                      <block> 
+                          <swiper-item>
+                             <image src="/images/1471869052488633.jpg" mode="aspectFill"></image>
+                          </swiper-item>
+                          <swiper-item>
+                             <image src="/images/1472466617121967.jpg" mode="aspectFill"></image>
+                          </swiper-item>
+                          <swiper-item>
+                            <image src="/images/1471870526356837.jpg" mode="aspectFill"></image>
+                         </swiper-item>
+                      </block>
+                    </swiper>
+                    
+                  <!-- 签到抽奖摇一摇模块 -->
+                 <view class="hhw">
+                     <ul>
+                       <li><span class="pic1"></span>专家文章</li>
+                       <li style="margin: 0 5px;"><span class="pic2"></span>文章收藏</li>
+                       <li><span class="pic3"></span>帖子收藏</li>
+                     </ul>
+                 </view>
+                
+                <!-- 推荐麻包圈 -->
+                <view class="quan">
+                  <view class="think">推荐麻包圈</view>
+                	<ul>
+                		  <li wx:for="{{list}}" wx:for-item="item">
+                       <image src="{{item.img}}"></image><div><i>{{item.name}}</i><strong>{{item.content}}</strong></div><span></span>  
+                      </li>
+                	</ul>
+                </view>
+                
+              </scroll-view> 
+            </swiper-item>
+            <swiper-item>
+              热帖
+            </swiper-item>
+            <swiper-item>
+              更多圈
+            </swiper-item>
+        </block>
+    </swiper>
+
+</view>

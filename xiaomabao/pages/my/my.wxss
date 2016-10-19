@@ -1,0 +1,89 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+.main-nav{height: 34px; width: 100%; overflow: hidden; 
+      padding-top:10px;
+    background: url(../../images/navback.png) no-repeat;
+    background-size: 100%;
+    text-align: center;
+    }
+.main-nav ul{
+  
+  border: 1px solid white;
+  border-radius: 8px;
+  display: inline-block;
+  /* width: 224px; */
+  height: 24px;
+  overflow: hidden;
+    /* margin: 0 auto; */
+}
+.main-nav ul li{
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 8px;
+  float: left;
+  line-height: 24px;
+  height: 24px;
+    color: #fff;
+}
+.main-nav ul .active{background: #fff;color: red; }
+
+.content{
+  width: 100%;
+}
+
+.main-list{
+  width: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+.teshu{border-left: 1px solid white; border-right: 1px  solid white;}
+icon{position: absolute; top: 13px; right: 5px;}
+
+
+
+.banner image{width: 100%; height: 100%;}
+
+.hhw{width: 100%;margin-top: 5px; background: white;
+     padding-top: 8px; margin-bottom: 7px;}
+.hhw ul{display: flex;flex-direction: row; padding:10px 0;}
+.hhw ul li{color: #000; height: 40px;font-size: 12px; text-align: center;flex: 1; 
+       height: 50px;
+       }
+.hhw ul li span{display: block; width: 50px; height: 30px;
+            margin:0 auto;
+            background-size: 70%;
+            margin-bottom:6px;
+        }
+.pic1{background: url(../../images/second1.png) no-repeat center;
+        }
+.pic2{background: url(../../images/second2.png) no-repeat center;
+        }
+.pic3{background: url(../../images/second3.png) no-repeat center;
+        }               
+
+
+.quan{width: 100%; background: white;}
+
+.think{font-size: 14px; color:#6642775; padding:10px 0; margin-left: 10px;}
+
+.quan ul{overflow: hidden;}
+
+.quan ul li{width: 100%; display: flex; flex-direction: row; 
+            padding:16px 0; border-top: 1px solid #EAEAEA; padding-left: 10px;}
+.quan ul li image{height: 40px; width: 40px;}
+.quan ul li div{font-size: 14px;flex: 1; padding-left: 10px;}
+.quan ul li div i{display: block; color: #D66263; line-height: 24px;}
+.quan ul li div strong{display: block; color: #72767E;}
+.quan ul li span{display: block; width: 40px; height: 40px;
+                 background: url(../../images/ppt.png) no-repeat 10px;background-size: 20px 20px;}
+

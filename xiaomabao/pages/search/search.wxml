@@ -1,0 +1,12 @@
+
+
+<view>
+<scroll-view scroll-y="true">
+   
+     	<ul>
+     		<li wx:for="{{list}}" wx:for-item="item"><image src="{{item.img}}"></image><div><strong>{{item.name}}</strong><p>{{item.content}}</p><i>{{item.palce}}</i><span>{{item.city}}</span></div></li>
+     	</ul>
+ 
+  </scroll-view>
+
+</view>

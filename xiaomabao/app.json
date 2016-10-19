@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/photo/photo",
+    "pages/my/my",
+    "pages/exit/exit",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  },
+   "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#d66263",
+    "borderStyle":"black",
+    "list": [
+      {
+        "pagePath": "pages/photo/photo",
+        "text": "萌宝",
+        "iconPath": "images/baby_no.png",
+        "selectedIconPath": "images/baby_yes.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "麻包服务",
+        "iconPath": "images/mbfu_logo.png",
+        "selectedIconPath": "images/mbfu_logo_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/goods_imgun.png",
+        "selectedIconPath": "images/googs_img.png",
+        "text": "购物"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/main_tab_friend.png",
+        "selectedIconPath": "images/main_tab_friend_on.png",
+        "text": "麻包圈"
+      },
+      {
+        "pagePath": "pages/exit/exit",
+        "iconPath": "images/main_tab_me.png",
+        "selectedIconPath": "images/main_tab_me_on.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
